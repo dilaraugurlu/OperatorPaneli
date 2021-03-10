@@ -1,0 +1,129 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>isbekliyor</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-6" style="background-color:darkred">
+            <p style="color:white"><strong>İSTASYON 899</strong></p>
+        </div>
+
+        <div class="col-md-6" style="background-color:dimgray"><p style="color:white"><strong>İŞ BEKLİYOR</strong></p></div>
+    </div>
+
+    <div class="container-fluid" style="background-color:darkslategrey; height:100px">
+        <div class="row">
+            <div class="col-md-6">
+                <label style="color:white">İŞ NO | PLAN. İŞ MİKTARI</label><br />
+                <label style="color:white">KALAN MİKTAR [ADET]</label>
+            </div>
+            <div class="col-md-6">
+                <label style="color:white"><strong>ADET</strong></label><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:darkred; height:80px">
+        <div class="row">
+            <div class="col-md-6">
+                <label style="color:white">STOK</label><br />
+                <label style="color:white">STOK ADI 2</label>
+            </div>
+            <div class="col-md-6">
+                <label style="color:white">İŞ EMRİ NO</label><br />
+                <label style="color:white">İŞE BAŞLAMA</label><br />
+                <label style="color:white">GEÇEN SÜRE</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">PERSONEL</th>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">OPERASYON</th>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ANLIK DURUŞ SÜRESİ</th>
+                            <td>43 sn</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">VARDİYA ÜRETİMİ</th>
+                            <td>485</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">VARDİYA DURUŞ SÜRESİ</th>
+                            <td>8 sa 49 dk</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">RANDIMAN (Son 8 saat)</th>
+                            <td>%2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">HATA</th>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">TAKİP NO</th>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">EKİPMAN</th>
+                            <td>43 sn</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ANLIK/V. ORT. HIZ</th>
+                            <td>4000/0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ÇEVRİM G/P</th>
+                            <td>.9/0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">PLAN. KAPASİTE</th>
+                            <td>1440 Ad/Sa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-lg btn-success" style="text-align:center" href="@Url.Action("isYukle","isBekliyor")">İş Yükle</a>
+        <button type="button" class="btn btn-success btn-lg">Duruş Tanımla</button>
+        <button type="button" class="btn btn-success btn-lg">Personel İşlemleri</button>
+        <button type="button" class="btn btn-success btn-lg" disabled>Hata Girişi</button>
+        <button type="button" class="btn btn-success btn-lg">Vardiya Bilgileri</button>
+        <button type="button" class="btn btn-success btn-lg">İş Parametreleri</button>
+        <a class="btn btn-lg btn-success" style="text-align:center" href="@Url.Action("DigerIslemler","calisiyor")">Diğer İşlemler</a>
+   
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>

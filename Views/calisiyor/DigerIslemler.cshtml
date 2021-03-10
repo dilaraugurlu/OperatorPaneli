@@ -1,0 +1,107 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>DigerIslemler</title>
+</head>
+<body>
+    <div class="row"><h2 style="text-align:center; background-color:khaki">DİĞER İŞLEMLER</h2></div>
+    <br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Duruş Değiştir</button></div>
+            <div class="col-md-4"><a class="btn btn-lg btn-secondary" style="height:100px; width:300px; text-align:center" href="@Url.Action("IsDegistir","calisiyor")">İş Değiştir</a></div>
+            <div class="col-md-4"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Tanımsız Duruşları Değiştir</button></div>
+           
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Sonraki İş Seçimi</button></div>
+            <div class="col-md-4"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Kalite&Bakım Personeli Çağır</button></div>
+            <div class="col-md-4"><a class="btn btn-lg btn-secondary" style="text-align:center; height:100px; width:300px" href="@Url.Action("isBekliyor","isBekliyor")">Geri</a></div>
+            @*<div class="col-md-4"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Geri</button></div>*@
+        </div>
+        <br />
+        @*<div class="row">
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Hammadde İşlemleri</button></div>
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Sonraki İş Seçimi</button></div>
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Kalite&Bakım Personeli Çağır</button></div>
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Mesajlar[Son 100]</button></div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Ekran Koruyucu</button></div>
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Ekran Koruyucuyu Devreye Al</button></div>
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">İş Bilgisi Yazdır</button></div>
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Son Etiketi Yazdır</button></div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Kalıp Değişimi</button></div>
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">I/O Kart Bilgileri</button></div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Onaysız Üretim Fişleri</button></div>
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Üst Sisteme Gönderilemeyen Üretim Fişleri</button></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"><a class="btn btn-lg btn-secondary" style="text-align:center; height:100px; width:300px" href="@Url.Action("isBekliyor","isBekliyor")">Geri</a></div>
+            <div class="col-md-3"><button class="btn btn-lg btn-secondary" style="height:100px; width:300px">Geri</button></div>
+        </div>*@
+    </div>
+
+
+
+    @*<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-lg">İş Bilgileri</button>
+                        <button class="btn btn-primary btn-lg" disabled>Duruş Değiştir</button>
+                        <button class="btn btn-primary btn-lg">Hammadde İşlemleri</button>
+                        <button class="btn btn-primary btn-lg">Ekran Koruyucu</button>
+                        <button class="btn btn-primary btn-lg">Kalıp Değişimi</button>
+                        <button class="btn btn-primary btn-lg">Onaysız Üretim Fişleri</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-lg">İş Değiştir</button>
+                        <button class="btn btn-primary btn-lg">Duruş Değiştir</button>
+                        <button class="btn btn-primary btn-lg">Tanımsız Duruşları Değiştir</button>
+                        <button class="btn btn-primary btn-lg">Sonraki İş Seçimi</button>
+                        <button class="btn btn-primary btn-lg">Ekran Koruyucuyu Devreye Al</button>
+                        <button class="btn btn-primary btn-lg">I/O Kart Bilgileri</button>
+                        <button class="btn btn-primary btn-lg">Üst Sisteme Gönderilemeyen Üretim Fişleri</button>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn btn-primary btn-lg">BAKIM</button>
+                            <button class="btn btn-primary btn-lg">KALİTE KONTROL</button>
+                            <button class="btn btn-primary btn-lg">Kalite&Bakım Personeli Çağır</button>
+                            <button class="btn btn-primary btn-lg">İş Bilgisi Yazdır</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-primary btn-lg" disabled>Bakım İşemri Kapat</button>
+                            <button class="btn btn-primary btn-lg">Enerji Tüketim Bilgisi</button>
+                            <button class="btn btn-primary btn-lg">Mesajlar (Son 100)</button>
+                            <button class="btn btn-primary btn-lg">BAKIM</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
